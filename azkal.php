@@ -10,7 +10,7 @@ echo color("green"," Claim Voucher \n");
 echo color("green"," Tools Auto Claim And Create Voucher Go Food\n");
 echo color("yellow"," =========================================== \n");
 echo "Creator    :  Azkal182\n";
-echo  "Version    : V 1.0 ( NEW VERSION )\n";
+echo  "Version    : V 1.0 \n";
 echo "NOTE       : MASUKAN NO HP DENGAN AWALAN ( 62xxxxx)\n";
 echo color("blue"," =========================================== \n");
 
@@ -60,7 +60,7 @@ echo color("blue"," =========================================== \n");
 				save("token.txt",$token);
 
 				echo color("green","\n===========(REDEEM VOUCHER)===========");
-				echo "\n".color("yellow","!] Claim Voc COBAGOCARPAY");
+				echo "\n".color("yellow","!] Claim Voc :COBAGOFOOD090320A");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
@@ -74,7 +74,7 @@ echo color("blue"," =========================================== \n");
 				}else{
 					echo "\n".color("red","-] Message: ".$message);
 
-					echo "\n".color("yellow","!] Claim Voc GOFOOD022620A");
+					echo "\n".color("yellow","!] Claim Voc HEPIPANGERAN");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -90,7 +90,7 @@ echo color("blue"," =========================================== \n");
 						echo "\n".color("red","-] Message: ".$messageboba10);
 					}
 					goride:
-					echo "\n".color("yellow","!] Claim Voc COBAGORIDEPAY");
+					echo "\n".color("yellow","!] Claim Voc HEPIBOEDJANGAN");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -101,7 +101,7 @@ echo color("blue"," =========================================== \n");
 					$message1 = fetch_value($goride,'"message":"','"');
 					echo "\n".color("green","+] Message: ".$message1);
 
-					echo "\n".color("yellow","!] Claim Voc GOPAYMLCC");
+					echo "\n".color("yellow","!] Claim Voc HEPIMALAMMINGGU");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
