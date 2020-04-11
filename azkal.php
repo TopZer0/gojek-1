@@ -5,9 +5,7 @@ date_default_timezone_set('Asia/Surabaya');
 include "function.php";
 system('clear');
 system('sleep 2');
-echo color("yellow"," =========================================== \n");
-echo color("green"," Claim Voucher \n");
-echo color("green"," Tools Auto Claim And Create Voucher Go Food\n");
+
 echo color("yellow"," =========================================== \n");
 echo "Creator    :  Azkal182\n";
 echo  "Version    : V 1.0 \n";
@@ -60,13 +58,13 @@ echo color("blue"," =========================================== \n");
 				save("token.txt",$token);
 
 				echo color("green","\n===========(REDEEM VOUCHER)===========");
-				echo "\n".color("yellow","!] Claim Voc :COBAGOFOOD090320A");
+				echo "\n".color("yellow","!] Claim Voc :");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
 					sleep(1);
 				}
-				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD090320A"}');
+				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD010420A"}');
 				$message = fetch_value($code1,'"message":"','"');
 				if(strpos($code1, 'You can use this promo now...')){
 					echo "\n".color("green","+] Message: ".$message);
@@ -74,7 +72,7 @@ echo color("blue"," =========================================== \n");
 				}else{
 					echo "\n".color("red","-] Message: ".$message);
 
-					echo "\n".color("yellow","!] Claim Voc HEPIPANGERAN");
+					echo "\n".color("yellow","!] Claim Voc ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -90,7 +88,7 @@ echo color("blue"," =========================================== \n");
 						echo "\n".color("red","-] Message: ".$messageboba10);
 					}
 					goride:
-					echo "\n".color("yellow","!] Claim Voc HEPIBOEDJANGAN");
+					echo "\n".color("yellow","!] Claim Voc ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -101,7 +99,7 @@ echo color("blue"," =========================================== \n");
 					$message1 = fetch_value($goride,'"message":"','"');
 					echo "\n".color("green","+] Message: ".$message1);
 
-					echo "\n".color("yellow","!] Claim Voc HEPIMALAMMINGGU");
+					echo "\n".color("yellow","!] Claim Voc ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
