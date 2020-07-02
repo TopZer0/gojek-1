@@ -67,7 +67,7 @@ echo color("green","                  Format Kode 62*** \n");
 	echo color("white","+] Your access token : ".$token."\n\n");
 	save("token.txt",$token); 
 	echo color("white","\n▬▬▬▬▬▬▬▬▬▬▬▬CLAIM VOUCHER▬▬▬▬▬▬▬▬▬▬▬▬");
-	echo "\n".color("white","CLAIM A..");
+	echo "\n".color("white","CLAIM BANG BENI..");
 	echo "\n".color("white"," Please wait");
 	for($a=1;$a<=3;$a++){
 	echo color("white",".");
@@ -81,7 +81,7 @@ echo color("green","                  Format Kode 62*** \n");
 	}else{
 	echo "\n".color("white"," Message: ".$message);
 gocar:
-	echo "\n".color("white","CLAIM B.. ");
+	echo "\n".color("white","CLAIM BANG ALDI.. ");
 	echo "\n".color("white"," Please wait");
 	for($a=1;$a<=3;$a++){
 	echo color("white",".");
@@ -95,13 +95,13 @@ gocar:
 	}else{
 	echo "\n".color("white"," Message: ".$message);
 	gofood:
-	echo "\n".color("white","CLAIM C..");
+	echo "\n".color("white","CLAIM BANG BENI..");
 	echo "\n".color("white"," Please wait");
 	for($a=1;$a<=3;$a++){
 	echo color("white",".");
 	sleep(0);
 	}
-	$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":""}');
+	$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
 	$message = fetch_value($code1,'"message":"','"');
 	echo "\n".color("white"," Message: ".$message);
 	sleep(2);
