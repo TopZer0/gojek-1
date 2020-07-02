@@ -75,7 +75,7 @@ echo color("green","                  Format Kode 62*** \n");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
-					sleep(3);
+					sleep(5);
 				}
 				$code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PESANGOFOOD2206"}');
 				$message = fetch_value($code1,'"message":"','"');
@@ -89,7 +89,7 @@ echo color("green","                  Format Kode 62*** \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(3);
+						sleep(15);
 					}
 					sleep(3);
 					$boba10 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
@@ -105,7 +105,7 @@ echo color("green","                  Format Kode 62*** \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(3);
+						sleep(15);
 					}
 					sleep(3);
 					$goride = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"COBAGOFOOD2206"}');
@@ -116,13 +116,13 @@ echo color("green","                  Format Kode 62*** \n");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
-						sleep(3);
+						sleep(15);
 					}
 					sleep(3);
 					$goride1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"PAKEGOFOOD0906"}');
 					$message2 = fetch_value($goride1,'"message":"','"');
 					echo "\n".color("green","+] Message: ".$message2);
-					sleep(3);
+					sleep(15);
 
 					$cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=10&page=1', $token);
 					$total = fetch_value($cekvoucher,'"total_vouchers":',',');
