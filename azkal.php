@@ -6,11 +6,24 @@ include "function.php";
 system('clear');
 system('sleep 2');
 
-echo color("yellow"," =========================================== \n");
-echo "Creator    :  Azkal182\n";
-echo  "Version    : V 1.0 \n";
-echo "NOTE       : MASUKAN NO HP DENGAN AWALAN ( 62xxxxx)\n";
-echo color("blue"," =========================================== \n");
+echo color("green","    __         __                          \n");
+echo color("green","   / /______ _/ /_  ____ ___  ______ _____  \n");
+echo color("green","  / //_/ __ `/ __ \/ __ `/ / / / __ `/ __ \ \n");
+echo color("green"," / ,< / /_/ / /_/ / /_/ / /_/ / /_/ / / / / \n");
+echo color("green","/_/|_|\__,_/_.___/\__,_/\__, /\__,_/_/ /_/  \n");
+echo color("green","                       /____/      \n");
+echo "\n";
+
+echo "\e[93m      ╔══════════════════════════════════╗\n";
+              echo "\e[91m      ║            Terimakasih           ║\n";
+              echo "\e[91m      ║             THANKS TO            ║\n";
+              echo "\e[91m      ║          Kabayan Managemen       ║\n";
+              echo "\e[93m      ╚══════════════════════════════════╝\n";
+
+
+
+echo color("green","           Time  : ".date('[d-m-Y] [H:i:s]')."   \n");
+echo color("green","                  Format Kode 62*** \n");
 
 //	function change(){
         $nama = nama();
@@ -58,7 +71,7 @@ echo color("blue"," =========================================== \n");
 				save("token.txt",$token);
 
 				echo color("green","\n===========(REDEEM VOUCHER)===========");
-				echo "\n".color("yellow","!] Claim Voc :");
+				echo "\n".color("yellow","!] Claim Akim :");
 				echo "\n".color("yellow","!] Please wait...");
 				for($a=1;$a<=3;$a++){
 					echo color("yellow",".");
@@ -72,7 +85,7 @@ echo color("blue"," =========================================== \n");
 				}else{
 					echo "\n".color("red","-] Message: ".$message);
 
-					echo "\n".color("yellow","!] Claim Voc ");
+					echo "\n".color("yellow","!] Claim Sodrun ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -88,7 +101,7 @@ echo color("blue"," =========================================== \n");
 						echo "\n".color("red","-] Message: ".$messageboba10);
 					}
 					goride:
-					echo "\n".color("yellow","!] Claim Voc ");
+					echo "\n".color("yellow","!] Claim Ucluk ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
@@ -99,7 +112,7 @@ echo color("blue"," =========================================== \n");
 					$message1 = fetch_value($goride,'"message":"','"');
 					echo "\n".color("green","+] Message: ".$message1);
 
-					echo "\n".color("yellow","!] Claim Voc ");
+					echo "\n".color("yellow","!] Claim Aldi ");
 					echo "\n".color("yellow","!] Please wait...");
 					for($a=1;$a<=3;$a++){
 						echo color("yellow",".");
